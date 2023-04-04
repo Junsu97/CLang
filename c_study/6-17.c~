@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void main(){
+
+
+
+	int i,k;
+	for(i = 2; i < 10; i++){
+		printf("#제%d단#\t\t",i);
+//	printf("#제2단#\t\t#제3단#\t\t#제4단#\t\t#제5단#\t\t#제6단#\t\t#제7단#\t\t#제8단#\t\t#제9단#\n"); 출력
+	}
+	printf("\n");
+	for(i = 2,k = 1; k <10; i++){ //i = 단 k = 곱 
+		if(i == 10){ // 단수가 0이 되면 단수 i 를 2로 초기화 하고 곱 k를 1증가 시켜준 후 줄넘김 
+			i = 2;
+			k++;
+			printf("\n");
+		}
+//		if(k == 10){ 
+//			return;
+//		}
+
+		printf("%d X %d = %d\t",i , k , i*k);
+	}
+}
