@@ -3,19 +3,19 @@
 void main()
 {
 	unsigned int years;
-	printf("¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+	printf("ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 	scanf("%u",&years);
 
-	if(years == 4 || years%400 == 0 || years % 100 != 0)
+	if((years == 4 && years%400 == 0) || years % 100 != 0)
 	{
-		printf("%u ³âÀº(´Â) À±³âÀÔ´Ï´Ù.\n",years);
+		printf("%u ë…„ì€(ëŠ”) ìœ¤ë…„ì…ë‹ˆë‹¤.\n",years);
 	}
 	else
 	{
-		printf("%u ³âÀº(´Â) À±³âÀÌ ¾Æ´Õ´Ï´Ù.\n",years);
+		printf("%u ë…„ì€(ëŠ”) ìœ¤ë…„ì´ ì•„ë‹™ë‹ˆë‹¤.\n",years);
 	}
 
-	printf("3ÃÊµÚ Á¾·áµË´Ï´Ù.");
+	printf("3ì´ˆë’¤ ì¢…ë£Œë©ë‹ˆë‹¤.");
 	time_t startTime = time(NULL);
 	while(time(NULL) - startTime < 3){}
 	
