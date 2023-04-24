@@ -6,7 +6,7 @@ void main()
 	printf("숫자를 입력해주세요.");
 	scanf("%u",&years);
 
-	if((years == 4 && years%400 == 0) || years % 100 != 0)
+	if((years % 4 == 0 && years % 400 == 0) || years % 100 != 0)
 	{
 		printf("%u 년은(는) 윤년입니다.\n",years);
 	}
