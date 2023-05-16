@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+
+void main(){
+	char ss[] = "XYZ";
+	char tt[] = "xyz";
+	int r;
+
+	r = strcmp(ss,tt);//strcmp()함수는 두 문자열을 비교해서 같으면 0 다르면 그 외의 숫자(두 문자열의 아스키 코드 값 차이)
+	printf("두 문자열의 비교결과 ==> %d\n",r);
+}

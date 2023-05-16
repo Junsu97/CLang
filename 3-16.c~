@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	int a;
+	int b;
+	char s [3];
+
+	printf("입력진수 결졍 <1>10 <2>16 <3>8 : ");
+	scanf("%d",&a);
+	printf("값 입력 : ");
+	
+	
+	switch(a){
+	case 1: 
+		scanf("%d",&b);
+			
+		break;
+	case 2: 
+		scanf("%x",&b);
+		break;
+	case 3: 
+		scanf("%o",&b);
+		break;
+	default : 
+		printf("1에서 3사이 중에서 다시 고르세요\n");
+		break;
+	}
+	
+		printf("10진수 ==> %d\n",b);
+		printf("16진수 ==> %X\n",b);
+		printf("8진수 ==> %o\n",b);
+	
+}
