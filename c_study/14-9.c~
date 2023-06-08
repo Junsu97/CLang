@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+void main( char* argv[]){
+	char str[200];
+	FILE *rfp;
+	FILE *wfp;
+
+
+	rfp = fopen(argv[0], "r");
+	wfp = fopen("c:\\c_study\\14test.txt","w");
+	for(;;){
+		fgets(str, 199i, rfp);
+
+		if(feof(rfp))
+			break;
+		fputs(str,wfp);
+	}
+	
+
+	fclose(rfp);
+	fclose(wfp);
+}
