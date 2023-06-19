@@ -11,7 +11,7 @@ void main(){
 	u.tot = 300;
 	u.grade = 'A';
 
-	printf("\n---  °ø¿ëÃ¼ È°¿ë ---\n");
-	printf("ÃÑÁ¡ ==> %d\n",u.tot);
-	printf("µî±Ş ==> %c\n",u.grade);
+	printf("\n---  ï¿½ï¿½ï¿½ï¿½Ã¼ È°ï¿½ï¿½ ---\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ ==> %d\n",u.tot);
+	printf("ï¿½ï¿½ï¿½ ==> %c\n",u.grade);
 }

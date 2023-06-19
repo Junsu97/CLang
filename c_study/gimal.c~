@@ -1,28 +1,32 @@
 #include<stdio.h>
 #include<malloc.h>
 #include<string.h>
-
 void main(){
 	struct student{
-		char[10] name;
+		char name[10];
 		int age;
 	};
 
+	struct student s;
+	struct student *p;
 	int count;
-	printf("ÀÔ·ÂÇÒ ÇĞ»ı ¼ö : ");
+	printf("ì…ë ¥í•  í•™ìƒ ìˆ˜ : ");
 	scanf("%d",&count);
 	
-	struct student *p;
-	struct student s;
-	p = (struct student*)malloc(sizeof(s)*count);
+	p = (struct student*)malloc(sizeof(s) * count);
 
-	for(int i = 0; i < count; i++){
-		printf("ÀÌ¸§°ú ³ªÀÌ ÀÔ·Â : ");
-		scanf("%s %d",p[i].name,&p[i].age);
+	for(int i = 0;  i < count; i++){
+		printf("ì´ë¦„ê³¼ ë‚˜ì´ ì…ë ¥ : ");
+		scanf("%s %d",p[i].name, &p[i].age);
 	}
 
+	printf("\n\n-- í•™ìƒ ëª…ë‹¨ --\n");
 	for(int i = 0; i < count; i++){
-		printf("ÀÌ¸§ : %s , ³ªÀÌ : %d\n",p[i].name, p[i].age);
+		printf("ì´ë¦„: %s , ë‚˜ì´:%d \n",p[i].name, p[i].age);
 	}
+
+	for(int i = 0; i < count; i++)
+		free(p+i);
+	
+		
 }
-

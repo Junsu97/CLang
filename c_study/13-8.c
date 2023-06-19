@@ -7,7 +7,7 @@ void main(){
 
 	//if(ww = sun)
 	if(ww = 0)
-		printf("������ �Ͽ��� �Դϴ�.\n");
+		printf("오늘은 일요일 입니다.\n");
 	else
-		printf("������ �Ͽ����� �ƴմϴ�.\n");
+		printf("오늘은 일요일이 아닙니다..\n");
 }
