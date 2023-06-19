@@ -5,7 +5,7 @@ void main(int argc, char* argv[]){
 	FILE *rfp;
 
 	if(argc != 2){
-		printf("\n --  매개변수를 1개 사용하세요 --\n");
+		printf("\n --  매개변수를 2개 입력해주세요. --\n");
 		return;
 	}
 
