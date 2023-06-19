@@ -1,11 +1,8 @@
 #include<stdio.h>
 
 void gugu(int dan){
-	int result;
-	for(int i=1; i < 10; i++){
-		result = dan * i;
-		printf("%d X %d = %d \n",dan,i,result);
-	}
+	for(int i = 1; i < 10; i++)
+		printf("%d x %d = %2d\n",dan,i,dan*i);
 }
 
 void main(){

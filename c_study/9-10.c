@@ -17,5 +17,5 @@ void main(){
 	*p1 = *p2;
 	*p2 = tmp;
 
-	printf("¹Ù²ï °ª a´Â %d, b´Â %d",*p1,*p2);
+	printf("¹Ù²ï °ª a´Â %d, b´Â %d",a,b);
 }

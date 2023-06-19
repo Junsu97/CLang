@@ -24,6 +24,7 @@ void main(){
 
 	for(int i = 0; i < count; i++){
 		printf("이름 : %s , 나이 : %d \n", p[i].name,p[i].age);
-	
 	}
+	for(int i = 0; i < count; i++)
+		free(p+i);
 }
